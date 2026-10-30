@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>E.K Earle | Wraiths and Wanderings</title>
+<meta name="description" content="A homepage idea made by Sparsh Saini for E.K Earle. Not their official site.">
+<meta property="og:title" content="E.K Earle | Wraiths and Wanderings">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for E.K Earle. Not their official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/ekearle/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/plate-s.jpg">
+<style>
+:root{
+  --wall:#2f3719; --wall-2:#3b4421; --deep:#1b200f; --gold:#e8b04a; --gold-soft:#d6a75a;
+  --pink:#ee78c2; --plum:#5d4c78; --cream:#f3eadb; --cream-soft:#cbc2ad;
+  --script:"Great Vibes", "Snell Roundhand", cursive; --text:"Josefin Sans", "Futura", system-ui, sans-serif;
+}
+*{box-sizing:border-box}
+html{background:var(--deep)}
+body{margin:0;background:var(--deep);color:var(--cream);font-family:var(--text);font-size:1.08rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+.strip{background:#0d0f07;color:var(--cream-soft);font-size:.86rem;line-height:1.4;text-align:center;padding:.55rem 1rem}
+
+/* ---------- hero: the wall of Paranormal Pop Culture ---------- */
+.hero{position:relative;height:420vh;background:var(--deep)}
+.stage{position:sticky;top:0;height:100vh;overflow:hidden;background:var(--deep) url(img/backdrop.jpg) center/cover no-repeat}
+.world{position:absolute;left:0;top:0;width:1489px;height:2048px;transform-origin:0 0;will-change:transform}
+.world img{position:absolute;max-width:none}
+.plate{left:0;top:0;width:1489px;height:2048px}
+.fr{will-change:transform}
+#p1{left:131px;top:48px;width:386px;height:784px;transform-origin:193px 10px}
+#p2{left:155px;top:828px;width:261px;height:547px;transform-origin:130px 8px}
+#p3{left:503px;top:711px;width:203px;height:452px;transform-origin:101px 12px}
+#p4{left:472px;top:1140px;width:202px;height:448px;transform-origin:101px 6px}
+#p5{left:130px;top:1364px;width:293px;height:561px;transform-origin:146px 14px}
+#neon{left:982px;top:297px;width:400px;height:490px;opacity:0;will-change:opacity}
+.name{position:absolute;z-index:5;left:clamp(1rem,3vw,2.2rem);top:1rem;font:700 .82rem/1 var(--text);letter-spacing:.24em;text-transform:uppercase;text-decoration:none;color:var(--gold);text-shadow:0 1px 6px rgba(0,0,0,.7)}
+.open{position:absolute;z-index:4;left:0;right:0;top:12%;text-align:center;padding:0 1.4rem;will-change:opacity,transform}
+.open p{margin:0 auto;max-width:30rem;font:400 clamp(2rem,6.4vw,3.4rem)/1.05 var(--script);color:var(--cream);text-shadow:0 2px 14px rgba(0,0,0,.85)}
+.open small{display:block;margin-top:.7rem;font:600 .72rem/1 var(--text);letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.copy{position:absolute;z-index:4;opacity:0;will-change:opacity,transform}
+.copy h1{margin:0;font:400 clamp(2.6rem,6vw,4.4rem)/1 var(--script);color:var(--gold);word-spacing:.18em}
+.copy p{margin:.6rem 0 1.3rem;max-width:27rem;color:var(--cream)}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.scrim{position:absolute;inset:0;z-index:3;opacity:0;pointer-events:none;will-change:opacity}
+
+/* buttons in a gilt frame, as the portraits are hung */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:.8rem 1.3rem .65rem;font:700 .76rem/1 var(--text);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--gold);border:2px solid var(--gold);box-shadow:inset 0 0 0 3px var(--deep),inset 0 0 0 4px rgba(232,176,74,.55);background:rgba(27,32,15,.6);transition:background-color .2s,color .2s}
+.btn:hover,.btn:focus-visible{background:var(--gold);color:var(--deep);box-shadow:inset 0 0 0 3px var(--gold),inset 0 0 0 4px var(--deep)}
+.btn.pink{color:var(--pink);border-color:var(--pink);box-shadow:inset 0 0 0 3px var(--deep),inset 0 0 0 4px rgba(238,120,194,.55)}
+.btn.pink:hover,.btn.pink:focus-visible{background:var(--pink);color:var(--deep)}
+
+/* the cat from Wraiths and Wanderings is the menu */
+.cat{position:fixed;z-index:30;right:14px;bottom:12px;width:64px;height:74px;border:0;padding:0;background:none;cursor:pointer}
+.cat img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 2px 3px rgba(0,0,0,.6))}
+.cat span{position:absolute;right:58px;bottom:10px;font:700 .64rem/1 var(--text);letter-spacing:.2em;text-transform:uppercase;color:var(--gold);background:var(--deep);padding:.4rem .5rem .3rem;border:1px solid rgba(232,176,74,.5);white-space:nowrap}
+.sheet{position:fixed;z-index:29;right:12px;bottom:96px;width:min(18rem,calc(100vw - 24px));background:var(--plum);border:2px solid var(--gold);box-shadow:inset 0 0 0 5px var(--plum),inset 0 0 0 6px rgba(232,176,74,.6),0 18px 40px rgba(0,0,0,.5);padding:1.3rem 1.5rem 1.1rem;opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .2s,transform .2s}
+.sheet.on{opacity:1;transform:none;pointer-events:auto}
+.sheet p{margin:0 0 .4rem;font:400 1.9rem/1 var(--script);color:var(--gold)}
+.sheet a{display:block;padding:.55rem 0 .4rem;border-top:1px solid rgba(232,176,74,.35);text-decoration:none;font:600 .8rem/1.2 var(--text);letter-spacing:.14em;text-transform:uppercase}
+.sheet a:hover,.sheet a:focus-visible{color:var(--gold)}
+
+/* ---------- calm sections ---------- */
+main section{padding:clamp(4rem,9vw,7rem) clamp(1.1rem,5vw,4rem)}
+h2{margin:0 0 .4rem;font:400 clamp(2.6rem,6vw,3.8rem)/1.05 var(--script);color:var(--gold)}
+.kicker{margin:0 0 2.4rem;max-width:36rem;color:var(--cream-soft)}
+.wrap{max-width:64rem;margin:0 auto}
+.books{background:var(--wall)}
+.book{display:grid;grid-template-columns:minmax(0,14rem) minmax(0,1fr);gap:clamp(1.4rem,4vw,3rem);padding:2.4rem 0;border-top:1px solid rgba(232,176,74,.3)}
+.book img{box-shadow:0 14px 30px rgba(0,0,0,.5)}
+.book .no{margin:0;font:600 .72rem/1 var(--text);letter-spacing:.2em;text-transform:uppercase;color:var(--cream-soft)}
+.book h3{margin:.3rem 0 .6rem;font:400 clamp(2.1rem,4.4vw,2.8rem)/1.05 var(--script);color:var(--cream)}
+.book p{margin:0 0 1rem;max-width:38rem}
+.book .shops{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin-top:1.2rem;font:600 .74rem/1.4 var(--text);letter-spacing:.14em;text-transform:uppercase}
+.book .shops a{color:var(--gold);text-decoration-thickness:1px;text-underline-offset:4px}
+.desk{border-top:1px solid rgba(232,176,74,.3);padding-top:2.2rem;display:flex;gap:1rem;align-items:baseline;flex-wrap:wrap}
+.desk b{font:400 2rem/1 var(--script);color:var(--pink);font-weight:400}
+.desk span{color:var(--cream-soft)}
+
+.about .wrap{display:grid;grid-template-columns:minmax(0,20rem) minmax(0,1fr);gap:clamp(2rem,5vw,4rem);align-items:start}
+.about figure{margin:0}
+.about figure img{border:2px solid var(--gold);box-shadow:inset 0 0 0 4px var(--deep);padding:5px;background:var(--deep)}
+.about p{margin:0 0 1rem}
+.buns{display:flex;gap:1.4rem;align-items:center;margin-top:1.6rem}
+.buns img{width:120px;flex:none}
+.buns p{margin:0;font-size:1rem;color:var(--cream-soft)}
+
+.table{background:var(--wall-2)}
+.table .wrap{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+.ticket{border:2px solid var(--gold);box-shadow:inset 0 0 0 5px var(--wall-2),inset 0 0 0 6px rgba(232,176,74,.55);padding:1.8rem 1.6rem}
+.ticket .when{margin:0 0 .6rem;font:600 .74rem/1.3 var(--text);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.ticket h3{margin:0 0 .5rem;font:400 2.2rem/1.05 var(--script)}
+.ticket p{margin:0 0 .4rem;color:var(--cream-soft)}
+.find{list-style:none;margin:0;padding:0}
+.find li{border-top:1px solid rgba(232,176,74,.3);padding:.8rem 0}
+.find a{text-decoration:none;font:600 .82rem/1.3 var(--text);letter-spacing:.14em;text-transform:uppercase}
+.find a:hover,.find a:focus-visible{color:var(--gold)}
+.find small{display:block;color:var(--cream-soft);font-size:.9rem;letter-spacing:0;text-transform:none;font-weight:400}
+
+.live{background:var(--deep);text-align:center;padding-bottom:clamp(6rem,12vw,9rem)!important}
+.live .on{display:inline-block;margin-bottom:1rem;font:700 .74rem/1 var(--text);letter-spacing:.24em;text-transform:uppercase;color:var(--pink);border:1px solid var(--pink);padding:.5rem .7rem .4rem}
+.live p{max-width:36rem;margin:0 auto 1.6rem;color:var(--cream-soft)}
+.live .btns{justify-content:center}
+footer{padding:2rem 1.2rem 6.5rem;text-align:center;font-size:.92rem;color:var(--cream-soft);border-top:1px solid rgba(232,176,74,.25)}
+
+@media (max-width:760px){
+  body{font-size:1.02rem}
+  .book{grid-template-columns:7rem minmax(0,1fr);gap:1.1rem}
+  .book .rest{grid-column:1 / -1}
+  .about .wrap,.table .wrap{grid-template-columns:1fr}
+  .about figure{max-width:16rem}
+}
+@media (min-width:761px){ .book .rest{display:contents} .cat{right:24px;bottom:22px;width:76px;height:88px} .sheet{right:24px;bottom:120px} }
+@media (prefers-reduced-motion:reduce){ .sheet,.btn{transition:none} }
+</style>
+</head>
+<body>
+<div class="strip">A homepage idea made by Sparsh Saini for E.K Earle. Not their official site.</div>
+
+<div class="hero" id="top">
+  <div class="stage" id="stage">
+    <div class="world" id="world">
+      <img class="plate" src="img/plate-s.jpg" srcset="img/plate-s.jpg 745w, img/plate.jpg 1489w" sizes="(max-width:760px) 200vw, 120vh" alt="The cover of Paranormal Pop Culture: a girl at her desk with a black cat, under a wall of haunted portraits" width="1489" height="2048">
+      <img class="fr" id="p1" src="img/p1.webp" alt="">
+      <img class="fr" id="p2" src="img/p2.webp" alt="">
+      <img class="fr" id="p3" src="img/p3.webp" alt="">
+      <img class="fr" id="p4" src="img/p4.webp" alt="">
+      <img class="fr" id="p5" src="img/p5.webp" alt="">
+      <img id="neon" src="img/neon.webp" alt="">
+    </div>
+    <div class="scrim" id="scrim"></div>
+    <a class="name" href="#top">E.K Earle</a>
+    <div class="open" id="open">
+      <p>She uses her powers for good. So she says.</p>
+      <small>Wraiths and Wanderings</small>
+    </div>
+    <div class="copy" id="copy">
+      <h1>E.K Earle</h1>
+      <p>Romance full of longing stares and near moments of touching, all things paranormal, and weird girls doing even weirder things.</p>
+      <div class="btns"><a class="btn" href="#books">The books</a><a class="btn pink" href="https://www.twitch.tv/nacina">Write with me live</a></div>
+    </div>
+  </div>
+</div>
+
+<button class="cat" id="catbtn" aria-expanded="false" aria-controls="sheet"><span>Menu</span><img src="img/cat.webp" alt="Open the menu"></button>
+<nav class="sheet" id="sheet" aria-label="Sections">
+  <p>Hello friend</p>
+  <a href="#books">The books</a>
+  <a href="#about">About Em</a>
+  <a href="#table">Where to find me</a>
+  <a href="#live">Write with me</a>
+</nav>
+
+<main>
+  <section class="books" id="books">
+    <div class="wrap">
+      <h2>Wraiths and Wanderings</h2>
+      <p class="kicker">Charlotte Blythe, ex socialite turned YouTuber, a 110 year old ghost called Wade van Baid, and a supernatural Hunter named Hazel Williams.</p>
+      <article class="book">
+        <img src="img/cover-wraiths.webp" alt="Wraiths and Wanderings cover" width="600" height="848" loading="lazy">
+        <div class="rest"><div>
+          <p class="no">Book 1</p>
+          <h3>Wraiths and Wanderings</h3>
+          <p>Charlotte Blythe is twenty-eight and next in line as head of a prominent occult family. She's supposed to be, at any rate. After the massacre at her debutante ball, she turned her sights elsewhere: making videos that expose the truth about the occult world.</p>
+          <p>Then she stumbles across a familiar scene, a massacre tainted with the same dark magic as that night twelve years before.</p>
+          <div class="shops"><a href="https://www.amazon.com.au/Wraiths-Wanderings-K-Earle-ebook/dp/B0BV1N9DFW">Amazon AU</a><a href="https://www.goodreads.com/book/show/127479360-wraiths-and-wanderings">Goodreads</a></div>
+        </div></div>
+      </article>
+      <article class="book">
+        <img src="img/cover-secrets.webp" alt="Secrets and Summonings cover" width="600" height="938" loading="lazy">
+        <div class="rest"><div>
+          <p class="no">Book 2</p>
+          <h3>Secrets and Summonings</h3>
+          <p>Hazel Williams has settled into her new life at Winterbourne. Mostly. But her bestie Charlotte has been weird since her ghost-lover disappeared a few months ago.</p>
+          <p>Hazel decides Charlotte's love life is definitely the problem, and there's only one way to solve it: summon the demon Atticus and make him bring Wade back.</p>
+          <div class="shops"><a href="https://www.amazon.com.au/stores/E.K-Earle/author/B0BY4HF16B">Amazon AU</a><a href="https://www.ekearle.com/books">All stores</a></div>
+        </div></div>
+      </article>
+      <article class="book">
+        <img src="img/cover-ppc.webp" alt="Paranormal Pop Culture cover" width="600" height="825" loading="lazy">
+        <div class="rest"><div>
+          <p class="no">Book 3, short stories</p>
+          <h3>Paranormal Pop Culture</h3>
+          <p>Witches and cults. Dude bro vampires. Urban legends that make your skin crawl. Hot ladies in haunted manors. Asylums deep in the woods. And most importantly, some great sounding sandwiches.</p>
+          <p>Hazel dedicates this collection of the ghost hunting duo's adventures to Charlotte. Some may be slightly embellished. Who can say, really?</p>
+          <div class="shops"><a href="https://www.amazon.com.au/stores/E.K-Earle/author/B0BY4HF16B">Amazon AU</a><a href="https://www.ekearle.com/books">All stores</a></div>
+        </div></div>
+      </article>
+      <p class="desk"><b>A Garden of Saccharine and Decay</b><span>is the next one on my desk.</span></p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <figure><img src="img/em.webp" alt="E.K Earle in a white dress" width="415" height="900" loading="lazy"></figure>
+      <div>
+        <h2>Hello friend</h2>
+        <p>I'm E.K, but you can call me Em. I live in Adelaide with my husband and six rabbits: Bugs, Xena, Rain, Cloud, Button and Twinkles. (Yes, that is a lot of bunnies.)</p>
+        <p>I mentor young writers and give writing workshops as part of my day job, and I write live on Twitch. When I'm not writing I read, play video games, or work on crafts like my cosplays.</p>
+        <p>I'm neurodivergent, and I'm building a neurodivergent friendly coworking space for other writers. I also have an obsessive need to slip a Twilight reference into everything I write.</p>
+        <div class="buns"><img src="img/bunnies.webp" alt="A drawing of a girl with her rabbits, titled The Bakery" width="240" height="238" loading="lazy"><p>The bunnies, drawn for me.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="table" id="table">
+    <div class="wrap">
+      <div class="ticket">
+        <p class="when">Saturday 24 October 2026</p>
+        <h3>Adelaide Indie Author Book Festival</h3>
+        <p>Plant 4 Bowden, one of about 65 indie authors with a table.</p>
+      </div>
+      <ul class="find">
+        <li><a href="https://www.instagram.com/ekearlewrites/">Instagram<small>@ekearlewrites</small></a></li>
+        <li><a href="https://www.twitch.tv/nacina">Twitch<small>nacina, Monday to Thursday</small></a></li>
+        <li><a href="https://www.facebook.com/ekearle">Facebook<small>ekearle</small></a></li>
+        <li><a href="https://www.amazon.com.au/stores/E.K-Earle/author/B0BY4HF16B">Amazon<small>every book in one place</small></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="live" id="live">
+    <span class="on">Live Monday to Thursday</span>
+    <h2>Write with me</h2>
+    <p>I stream my writing on Twitch, a coworking space made neurodivergent friendly. Bring your own draft.</p>
+    <div class="btns"><a class="btn pink" href="https://www.twitch.tv/nacina">twitch.tv/nacina</a></div>
+  </section>
+</main>
+
+<footer>A mockup made by Sparsh Saini for E.K Earle. Not affiliated, not live.</footer>
+
+<script>
+(function(){
+  var hero=document.getElementById('top'), stage=document.getElementById('stage'), world=document.getElementById('world'),
+      neon=document.getElementById('neon'), open=document.getElementById('open'), copy=document.getElementById('copy'), scrim=document.getElementById('scrim'),
+      fr=['p4','p3','p2','p5','p1'].map(function(id){return document.getElementById(id);});
+  var amp=[9,-11,8,-10,7], at=[0.16,0.24,0.32,0.4,0.48];
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var W,H,wide,s0,s1,x1,y1,top0,span;
+  function clamp(v){return v<0?0:v>1?1:v}
+  function seg(p,a,b){return clamp((p-a)/(b-a))}
+  function io(t){return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2}
+  function out(t){return 1-Math.pow(1-t,3)}
+  function measure(){
+    W=stage.clientWidth; H=stage.clientHeight; wide=W>=761;
+    if(wide){ s1=H*0.96/2048; x1=W*0.66-1489*s1/2; y1=H*0.02; s0=Math.max(s1*2.6,(W/2)/(1489-880)*1.06);
+      copy.style.cssText+=';left:clamp(1.5rem,6vw,6rem);top:50%;bottom:auto;right:auto;max-width:28rem';
+      scrim.style.background='linear-gradient(90deg,rgba(27,32,15,.92),rgba(27,32,15,.6) 40%,rgba(27,32,15,0) 62%)';
+    } else { s1=W/1489; x1=0; y1=H*0.02; s0=s1*2.5;
+      copy.style.cssText+=';left:1.2rem;right:1.2rem;bottom:1.2rem;top:auto';
+      scrim.style.background='linear-gradient(rgba(27,32,15,0) 45%,rgba(27,32,15,.94) 66%)';
+    }
+    top0=hero.getBoundingClientRect().top+scrollY; span=hero.offsetHeight-H;
+  }
+  // a neon tube catching: scroll-driven, so it only flickers under your hand
+  var flick=[0,.85,.1,.15,.9,.35,1,1];
+  function frame(p){
+    // camera: from the desk and the cat, back to the whole wall
+    var c=io(seg(p,0.04,0.62));
+    var s=Math.exp(Math.log(s0)+(Math.log(s1)-Math.log(s0))*c);
+    var fx0=wide?880:1080, fx=fx0+(744-fx0)*c, fy=1420+(1024-1420)*c; // focus point in cover px
+    var ex=x1+744*s1, ey=y1+1024*s1; // where the cover centre lands at the end
+    var cx=(W/2)+(ex-W/2)*c, cy=(H*0.5)+(ey-H*0.5)*c;
+    world.style.transform='translate('+(cx-fx*s).toFixed(1)+'px,'+(cy-fy*s).toFixed(1)+'px) scale('+s.toFixed(4)+')';
+    // something unseen runs along the wall: each portrait knocked on its nail in turn
+    for(var i=0;i<5;i++){
+      var u=seg(p,at[i],at[i]+0.16), a=amp[i]*Math.sin(u*Math.PI*3.2)*Math.pow(1-u,1.4);
+      fr[i].style.transform='rotate('+a.toFixed(2)+'deg)';
+    }
+    var f=seg(p,0.5,0.66)*(flick.length-1), k=Math.floor(f), t=f-k;
+    var n=k>=flick.length-1?1:(t<.5?flick[k]:flick[k+1]);
+    neon.style.opacity=(p>=0.66?1:n).toFixed(2);
+    var o=1-seg(p,0.05,0.15); open.style.opacity=o.toFixed(3); open.style.transform='translateY('+(-24*(1-o)).toFixed(1)+'px)';
+    var q=out(seg(p,0.68,0.86)); copy.style.opacity=q.toFixed(3); copy.style.pointerEvents=q<0.5?'none':'auto'; scrim.style.opacity=q.toFixed(3);
+    copy.style.transform=wide?'translateY(calc(-50% + '+(18*(1-q)).toFixed(1)+'px))':'translateY('+(18*(1-q)).toFixed(1)+'px)';
+  }
+  function pos(){return reduce?1:clamp((scrollY-top0)/span);}
+  var ticking=false;
+  function onScroll(){ if(!ticking){ticking=true; requestAnimationFrame(function(){ticking=false; frame(pos());});} }
+  measure(); frame(pos());
+  addEventListener('scroll',onScroll,{passive:true});
+  addEventListener('resize',function(){measure(); frame(pos());});
+  // the cat menu
+  var btn=document.getElementById('catbtn'), sheet=document.getElementById('sheet');
+  function set(on){ sheet.classList.toggle('on',on); btn.setAttribute('aria-expanded',on); }
+  btn.addEventListener('click',function(){ set(!sheet.classList.contains('on')); });
+  sheet.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){set(false);});});
+  addEventListener('keydown',function(e){ if(e.key==='Escape') set(false); });
+})();
+</script>
+</body>
+</html>
